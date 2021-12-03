@@ -1,0 +1,30 @@
+input{
+    display: block;
+    margin: auto;
+}
+
+label{
+    /* text-align: center; */
+}
+
+form{
+    /* margin: auto; */
+    /* text-align: center; */
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+select{
+    width: 75px;
+}

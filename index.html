@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkey Submit Score</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Turkey Submit Score</h1>
+    <form action="submit">
+        <label for="weight">Harvest Weight</label>
+        <br>
+            <select required name="weight-lbs" id="weight-lbs">
+                <option value="">Lbs</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="11">12</option>
+                <option value="12">13</option>
+                <option value="13">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+            </select> 
+            
+            <select required name="weight-ounces" id="weight-ounces">
+                <option value="">Ounces</option>
+                <option value=".0">0</option>
+                <option value=".0625">1</option>
+                <option value=".125">2</option>
+                <option value=".1875">3</option>
+                <option value=".25">4</option>
+                <option value=".3125">5</option>
+                <option value=".375">6</option>
+                <option value=".4375">7</option>
+                <option value=".5">8</option>
+                <option value=".5625">9</option>
+                <option value=".625">10</option>
+                <option value=".6875">11</option>
+                <option value=".75">12</option>
+                <option value=".8125">13</option>
+                <option value=".875">14</option>
+                <option value=".9375">15</option>
+            </select> 
+            <!-- <input required id="weight" type="text" placeholder="ex. 21.37 lbs"> -->
+        <!-- <label for="beard-length-whole">Beard Length</label>
+            <input id="beard-length-whole" type="text" placeholder="ex. 10 1/16 in.">  -->
+            <br>
+            <br>
+        <label for="beard-length">Beard Length</label>
+        <br>
+        <div id="beards">
+            <div id="beard1">
+                <select required name="beard-length-whole" class="beard-length-whole">
+                    <option value="">Inches</option>
+                    <option value=".0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select> 
+                
+                <select required name="beard-legth-fraction" class="beard-length-fraction">
+                    <option value="">Fraction</option>
+                    <option value=".0">0/16</option>
+                    <option value=".0625">1/16</option>
+                    <option value=".125">2/16</option>
+                    <option value=".1875">3/16</option>
+                    <option value=".25">4/16</option>
+                    <option value=".3125">5/16</option>
+                    <option value=".375">6/16</option>
+                    <option value=".4375">7/16</option>
+                    <option value=".5">8/16</option>
+                    <option value=".5625">9/16</option>
+                    <option value=".625">10/16</option>
+                    <option value=".6875">11/16</option>
+                    <option value=".75">12/16</option>
+                    <option value=".8125">13/16</option>
+                    <option value=".875">14/16</option>
+                    <option value=".9375">15/16</option>
+                </select>
+            </div>
+        </div> 
+            <br>
+            <button id="add-beard">Add New Beard</button>
+        <br>
+            <br>
+            <br>
+        <label for="spur-length">Spur Lengths</label>
+            <br>
+            <select required name="spur-length-whole" class="spur-length-whole">
+                <option value="">Inches</option>
+                <option value=".0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select> 
+            
+            <select required name="spur-legth-fraction" class="spur-length-fraction">
+                <option value="">Fraction</option>
+                <option value=".0">0/16</option>
+                <option value=".0625">1/16</option>
+                <option value=".125">2/16</option>
+                <option value=".1875">3/16</option>
+                <option value=".25">4/16</option>
+                <option value=".3125">5/16</option>
+                <option value=".375">6/16</option>
+                <option value=".4375">7/16</option>
+                <option value=".5">8/16</option>
+                <option value=".5625">9/16</option>
+                <option value=".625">10/16</option>
+                <option value=".6875">11/16</option>
+                <option value=".75">12/16</option>
+                <option value=".8125">13/16</option>
+                <option value=".875">14/16</option>
+                <option value=".9375">15/16</option>
+            </select> 
+            <br>
+            <br>
+            <select required name="spur-length-whole" class="spur-length-whole">
+                <option value="">Inches</option>
+                <option value=".0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select> 
+            
+            <select required name="spur-legth-fraction" class="spur-length-fraction">
+                <option value="">Fraction</option>
+                <option value=".0">0/16</option>
+                <option value=".0625">1/16</option>
+                <option value=".125">2/16</option>
+                <option value=".1875">3/16</option>
+                <option value=".25">4/16</option>
+                <option value=".3125">5/16</option>
+                <option value=".375">6/16</option>
+                <option value=".4375">7/16</option>
+                <option value=".5">8/16</option>
+                <option value=".5625">9/16</option>
+                <option value=".625">10/16</option>
+                <option value=".6875">11/16</option>
+                <option value=".75">12/16</option>
+                <option value=".8125">13/16</option>
+                <option value=".875">14/16</option>
+                <option value=".9375">15/16</option>
+            </select> 
+            <br>
+            <br>
+        <button id="submit-score">Submit Score</button>
+    </form>
+
+    <h2>MY FINAL SCORE</h2>
+    <h2 id="score"></h2>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
