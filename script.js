@@ -38,7 +38,7 @@ function calculateTurkeyScore(weight,beardLength,spurLength){
 function addBeardClick (evt){
     numOfBeards ++ 
     const newBeard = 
-                    `<br>
+                    `
             <div id="beard${numOfBeards}">
                 <select required name="beard-length-whole" class="beard-length-whole">
                     <option value="0">Inches</option>
