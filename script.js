@@ -24,7 +24,7 @@ function submitScoreClick(evt){
    
 }
 
-$scoreForm.on('click', submitScoreClick)
+$('select').on('change', submitScoreClick)
 
 function calculateTurkeyScore(weight,beardLength,spurLength){
 
