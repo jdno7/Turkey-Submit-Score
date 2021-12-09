@@ -13,7 +13,7 @@
         <label for="weight">Harvest Weight</label>
         <br>
             <select required name="weight-lbs" id="weight-lbs">
-                <option value="">Lbs</option>
+                <option value="0">Lbs</option>
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -48,7 +48,7 @@
             </select> 
             
             <select required name="weight-ounces" id="weight-ounces">
-                <option value="">Ounces</option>
+                <option value="0">Ounces</option>
                 <option value=".0">0</option>
                 <option value=".0625">1</option>
                 <option value=".125">2</option>
@@ -76,7 +76,7 @@
         <div id="beards">
             <div id="beard1">
                 <select required name="beard-length-whole" class="beard-length-whole">
-                    <option value="">Inches</option>
+                    <option value="0">Inches</option>
                     <option value=".0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -96,7 +96,7 @@
                 </select> 
                 
                 <select required name="beard-legth-fraction" class="beard-length-fraction">
-                    <option value="">Fraction</option>
+                    <option value="0">Fraction</option>
                     <option value=".0">0/16</option>
                     <option value=".0625">1/16</option>
                     <option value=".125">2/16</option>
@@ -117,14 +117,16 @@
             </div>
         </div> 
             <br>
+            <div>
             <button id="add-beard">+ Beard</button>
+            </div>
         <br>
             <br>
             <br>
         <label for="spur-length">Spur Lengths</label>
             <br>
             <select required name="spur-length-whole" class="spur-length-whole">
-                <option value="">Inches</option>
+                <option value="0">Inches</option>
                 <option value=".0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -132,7 +134,7 @@
             </select> 
             
             <select required name="spur-legth-fraction" class="spur-length-fraction">
-                <option value="">Fraction</option>
+                <option value="0">Fraction</option>
                 <option value=".0">0/16</option>
                 <option value=".0625">1/16</option>
                 <option value=".125">2/16</option>
@@ -153,7 +155,7 @@
             <br>
             <br>
             <select required name="spur-length-whole" class="spur-length-whole">
-                <option value="">Inches</option>
+                <option value="0">Inches</option>
                 <option value=".0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -161,7 +163,7 @@
             </select> 
             
             <select required name="spur-legth-fraction" class="spur-length-fraction">
-                <option value="">Fraction</option>
+                <option value="0">Fraction</option>
                 <option value=".0">0/16</option>
                 <option value=".0625">1/16</option>
                 <option value=".125">2/16</option>
@@ -181,11 +183,12 @@
             </select> 
             <br>
             <br>
-        <button id="submit-score">Submit Score</button>
+        
     </form>
 
-    <h2>MY FINAL SCORE</h2>
+    <h2>FINAL SCORE</h2>
     <h2 id="score"></h2>
+    <!-- <button id="submit-score">Submit Score</button> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>

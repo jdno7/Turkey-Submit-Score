@@ -13,8 +13,13 @@ form{
     width: 50%;
     margin: auto;
     text-align: center;
+}
 
-
+button{
+    text-align: center;
+    width: 75%;
+    height: 40px;
+    
 }
 
 h1{
@@ -26,14 +31,16 @@ h2{
 }
 
 select{
-    width: 90%;
+    width: 40%;
     height: 50px;
     margin: 10px;
-    
+    text-align: center;
 }
 
 @media screen and ( max-width: 700px)  {
     form{
         width:100%;
     }
+
+    
 }

@@ -5,6 +5,7 @@ const $addBeardBTN = $('#add-beard')
 
 
 function submitScoreClick(evt){
+  
     evt.preventDefault()
         const $weightLbs = parseFloat($('#weight-lbs').val())
         const $weightounces = parseFloat($('#weight-ounces').val())
@@ -17,13 +18,13 @@ function submitScoreClick(evt){
         // const $spurLengthFraction = parseFloat($('#spur-length-fraction').val())
     const $spurLength = getSpurVals()
 
-    console.log(`Harvest Weight = ${$harvestWeight}, Beard Length = ${$beardLength}, Spur Length = ${$spurLength}`)
+    console.log(`Harvest Weight (${$harvestWeight}) + Beard Length (${$beardLength} * 2) + Spur Length (${$spurLength} * 10)`)
 
     calculateTurkeyScore($harvestWeight,$beardLength,$spurLength)
    
 }
 
-$scoreForm.on('submit', submitScoreClick)
+$scoreForm.on('click', submitScoreClick)
 
 function calculateTurkeyScore(weight,beardLength,spurLength){
 
@@ -40,7 +41,7 @@ function addBeardClick (evt){
                     `<br>
             <div id="beard${numOfBeards}">
                 <select required name="beard-length-whole" class="beard-length-whole">
-                    <option value="">Inches</option>
+                    <option value="0">Inches</option>
                     <option value=".0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -60,7 +61,7 @@ function addBeardClick (evt){
                 </select> 
                 
                 <select required name="beard-legth-fraction" class="beard-length-fraction">
-                    <option value="">Fraction</option>
+                    <option value="0">Fraction</option>
                     <option value=".0">0/16</option>
                     <option value=".0625">1/16</option>
                     <option value=".125">2/16</option>
@@ -78,7 +79,7 @@ function addBeardClick (evt){
                     <option value=".875">14/16</option>
                     <option value=".9375">15/16</option>
                 </select>
-                <button>X</button>
+                <button id = "remove">X</button>
             </div>
                    `
     const beardsDiv = $('#beards')
@@ -121,3 +122,10 @@ function getSpurVals(){
     }
     return spurTotals
 }
+
+function removeBeard(evt){
+    console.log(evt.target)
+    $(evt.target).parent().remove()
+}
+
+$($scoreForm).on('click', '#remove', removeBeard)
