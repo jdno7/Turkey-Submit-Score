@@ -5,8 +5,6 @@ const $addBeardBTN = $('#add-beard')
 
 
 function submitScoreClick(evt){
-  
-    evt.preventDefault()
         const $weightLbs = parseFloat($('#weight-lbs').val())
         const $weightounces = parseFloat($('#weight-ounces').val())
     const $harvestWeight = $weightLbs+$weightounces
@@ -24,7 +22,7 @@ function submitScoreClick(evt){
    
 }
 
-$('select').on('change', submitScoreClick)
+$scoreForm.on('change', 'select', submitScoreClick)
 
 function calculateTurkeyScore(weight,beardLength,spurLength){
 
@@ -127,6 +125,7 @@ function getSpurVals(){
 function removeBeard(evt){
     console.log(evt.target)
     $(evt.target).parent().remove()
+    submitScoreClick()
 }
 
 $($scoreForm).on('click', '#remove', removeBeard)
