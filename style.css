@@ -26,5 +26,14 @@ h2{
 }
 
 select{
-    width: 75px;
+    width: 90%;
+    height: 50px;
+    margin: 10px;
+    
+}
+
+@media screen and ( max-width: 700px)  {
+    form{
+        width:100%;
+    }
 }
