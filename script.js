@@ -36,6 +36,7 @@ function calculateTurkeyScore(weight,beardLength,spurLength){
 }
 
 function addBeardClick (evt){
+    evt.preventDefault()
     numOfBeards ++ 
     const newBeard = 
                     `
