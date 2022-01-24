@@ -6,7 +6,8 @@ const $addBeardBTN = $('#add-beard')
 
 function submitScoreClick(evt){
         const $weightLbs = parseFloat($('#weight-lbs').val())
-        const $weightounces = parseFloat($('#weight-ounces').val())
+        // const $weightounces = parseFloat($('#weight-ounces').val())
+        const $weightounces = parseFloat($('#weight-ounces').val() - parseFloat($('#weight-ounces').val() % .0625))
     const $harvestWeight = $weightLbs+$weightounces
         // const $beardLengthWhole = parseFloat($('#beard-length-whole').val())
         // const $beardLengthFraction = parseFloat($('#beard-length-fraction').val())
